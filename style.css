@@ -1,0 +1,97 @@
+/* CSS Resets*/
+body, p, ul{
+    margin: initial;
+    padding: initial;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2{
+    margin:initial;
+    font-size: inherit; /* 기본 폰트 사이즈로 초기화 */
+    font-weight: inherit; /*h1의 기본은 bold 처리 되어 있음*/
+}
+
+/* Design */
+body{
+    background-image: url(images/background.gif);
+}
+
+.wrapper{
+    background-color: #ddd;
+    width: 800px;
+    margin: 60px auto;
+}
+
+.header{
+    background-image: url(images/cover04.png);
+    text-align: center;
+    height: auto;
+    min-height: 400px;
+    color: white;
+}
+
+.header img.profile{
+    margin-top: 70px; /*마진탑 대신에 부모요소에서 조절하는 방법이 유지보수에 더 좋다*/
+    border: 6px solid white;
+    border-radius: 50%; /*동그라미*/
+    width: 140px;
+}
+
+.header h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.header p {
+    border-top: 8px solid;
+    width:fit-content; /* value 교안에서 찾아보기 */
+    margin: 4px auto;
+    padding: 4px 20px;
+}
+
+.section{
+    box-shadow: inset 0 0 10px gray;
+    background-color: white;
+    margin:20px;
+    padding:20px;
+
+    background-repeat: no-repeat;
+    background-position: right 40px center;
+}
+
+.section.information{
+    background-image: url(images/icon-information.png);
+}
+
+.section.skill{
+    background-image: url(images/icon-skills.png);
+}
+
+.section h2{
+    color: deeppink;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.list li{
+    border-left: 5px solid #ddd;
+    padding: 4px 6px;
+    transition: all .4s; /* 중간값을 만들어 부드럽게 함 */
+}
+
+.list li:hover{
+    border-color: aqua;
+    color: deeppink;
+    font-size:20px;
+}
+
+.footer{
+    background-color: #f4f4f4;
+    padding: 6px 0;
+    text-align: center;
+    color: #999;
+}
